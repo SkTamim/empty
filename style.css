@@ -93,3 +93,58 @@ a{
 	transform: translateY(-6px) translateX(1px) rotate(-45deg);
 	width: 100%;
 }
+
+
+.mobile-menu {
+	display: none;
+	background-color: #135171;
+	width: 50%;
+	margin-left: auto;
+	height: calc(100vh - 60px);
+}
+.mobile-menu-list {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.mobile-menu a {
+	color: #eef4fc;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px;
+	display: block;
+}
+.mobile-menu a:hover {
+	background-color: #1a6e9a;
+}
+.mobile-menu-list {
+	list-style: none;
+}
+.mobile-menu {
+	transform: translateX(100%);
+	transition: all 0.5s;
+}
+body {
+	overflow-x: hidden;
+}
+html {
+	overflow-x: hidden;
+}
+
+
+/* WRITING CSS FOR RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+	.menu-list {
+		display: none;
+	}
+
+	.mobile-hamburger-button {
+		display: block;
+	}
+
+	.mobile-menu {
+		display: block;
+	}
+}
