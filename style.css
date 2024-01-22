@@ -131,7 +131,9 @@ body {
 html {
 	overflow-x: hidden;
 }
-
+.mobile-menu.show {
+	transform: translateX(0);
+}
 
 /* WRITING CSS FOR RESPONSIVENESS */
 
